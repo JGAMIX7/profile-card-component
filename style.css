@@ -4,6 +4,7 @@
    --dark-cyan: hsl(185, 75%, 39%);
    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
    --dark-grayish-blue: hsl(227, 10%, 46%);
+   --dark-grayish-blue-opacity: hsla(227, 10%, 46%, 0.4);
    --dark-gray: hsl(0, 0%, 59%);
 }
 
@@ -15,7 +16,8 @@
 
 body{
    font-family: 'Kumbh Sans', sans-serif;
-   /* background: url(images/bg-pattern-top.svg) no-repeat top right; */
+   background: url(images/bg-pattern-top.svg) no-repeat right 50vw bottom 50vh, 
+               url(images/bg-pattern-bottom.svg) no-repeat left 50vw top 50vh;
    background-color: var(--dark-cyan);
 }
 
@@ -67,15 +69,12 @@ body{
    margin-top: 10px;
 }
 
-hr{
-   border: 1px solid #C4C4C4;
-} 
-
 .card .card-stats{
    display: flex;
    justify-content: space-around;
    align-items: center;
    padding: 25px;
+   border-top: 1px solid var(--dark-grayish-blue-opacity);
 }
 
 .card .card-stats .stat h3{
