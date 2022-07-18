@@ -67,9 +67,9 @@ body{
    margin-top: 10px;
 }
 
-/* hr{
-   border-color: (--dark-gray);
-} */
+hr{
+   border: 1px solid #C4C4C4;
+} 
 
 .card .card-stats{
    display: flex;
@@ -95,5 +95,18 @@ body{
    }
    .card{
       min-width: 300px;
+      margin: 10px;
+   }
+   .card .top-img{
+      height: 120px;
+   }
+   .card .card-userimg{
+      margin-top: -54px;
+   }
+   .card .card-info{
+      margin: 10px;
+   }
+   .card .card-stats{
+      padding: 20px;
    }
 }
