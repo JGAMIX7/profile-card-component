@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
 
-:root{
+:root {
    --dark-cyan: hsl(185, 75%, 39%);
    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
    --dark-grayish-blue: hsl(227, 10%, 46%);
@@ -8,27 +8,27 @@
    --dark-gray: hsl(0, 0%, 59%);
 }
 
-*{
+* {
    padding: 0;
    margin: 0;
    box-sizing: border-box;
 }
 
-body{
+body {
    font-family: 'Kumbh Sans', sans-serif;
    background: url(images/bg-pattern-top.svg) no-repeat right 50vw bottom 50vh, 
                url(images/bg-pattern-bottom.svg) no-repeat left 50vw top 50vh;
    background-color: var(--dark-cyan);
 }
 
-.container{
+.container {
    display: flex;
    justify-content: center;
    align-items: center;
    min-height: 100vh;
 }
 
-.card{
+.card {
    width: 350px;
    min-width: 320px;
    background-color: #fff;
@@ -38,38 +38,38 @@ body{
    margin: 20px;
 }
 
-.card .top-img{
+.card .top-img {
    height: 150px;
    background: url(images/bg-pattern-card.svg) no-repeat center/cover;
 }
 
-.card .card-userimg{
+.card .card-userimg {
    border: 5px solid #fff;
    border-radius: 50%;
    margin-top: -52px;
 }
 
-.card .card-info{
+.card .card-info {
    margin: 20px;
 }
 
-.card .card-info .username{
+.card .card-info .username {
    color: var(--very-dark-desaturated-blue);
 }
 
-.card .card-info .age-user{
+.card .card-info .age-user {
    font-weight: 400;
    color: var(--dark-grayish-blue);
    margin-left: 5px;
 }
 
-.card .card-info .city{
+.card .card-info .city {
    font-size: 0.9rem;
    color: var(--dark-grayish-blue);
    margin-top: 10px;
 }
 
-.card .card-stats{
+.card .card-stats {
    display: flex;
    justify-content: space-around;
    align-items: center;
@@ -77,11 +77,11 @@ body{
    border-top: 1px solid var(--dark-grayish-blue-opacity);
 }
 
-.card .card-stats .stat h3{
+.card .card-stats .stat h3 {
    color: var(--very-dark-desaturated-blue);
 }
 
-.card .card-stats .stat p{
+.card .card-stats .stat p {
    color: var(--dark-grayish-blue);
    font-size: 0.9rem;
    letter-spacing: 1px;
@@ -89,23 +89,23 @@ body{
 
 /* RESPONSIVE */
 @media screen and (max-width:320px) {
-   body{
+   body {
       font-size: 14px;
    }
-   .card{
+   .card {
       min-width: 300px;
       margin: 10px;
    }
-   .card .top-img{
+   .card .top-img {
       height: 120px;
    }
-   .card .card-userimg{
+   .card .card-userimg {
       margin-top: -54px;
    }
-   .card .card-info{
+   .card .card-info {
       margin: 10px;
    }
-   .card .card-stats{
+   .card .card-stats {
       padding: 20px;
    }
 }
